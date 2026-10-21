@@ -80,8 +80,9 @@ through. `Feed.fetch` raises on connection errors, so wrap it in your own retry 
 Any value that is missing, out of range or in unexpected units (for example a gust in km/h where knots
 were expected) is `null`, not converted or guessed.
 
-Zones are BOM AMOC area codes (`NSW_MW004` is the Sydney Coast). When a zone appears in both a state
-bundle and a local waters product, the later issue wins.
+Zones are BOM AMOC area codes (`NSW_MW004` is the Sydney Coast). **[docs/zones.md](docs/zones.md) lists
+every zone** by state, about 80 in all, from Gabo Island to the Gulf of Carpentaria. When a zone appears in
+both a state bundle and a local waters product, the later issue wins.
 
 ## Products read
 

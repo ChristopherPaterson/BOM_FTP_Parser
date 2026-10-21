@@ -14,7 +14,7 @@ Run them from the repo root.
 ## my_spot.py: conditions at one place, no database
 
 ```sh
-python examples/my_spot.py --find sydney                                  # find your zone code
+python examples/my_spot.py --find sydney                                  # find your zone code (or see docs/zones.md)
 python examples/my_spot.py --lat -33.85 --lon 151.27 --zone NSW_MW009     # live
 python examples/my_spot.py --lat -33.85 --lon 151.27 --zone TAS_MW004 --sample samples/bom.json
 ```
