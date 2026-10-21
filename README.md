@@ -197,3 +197,8 @@ display the data. This is not for navigation: BOM's website is the official sour
 
 Offline, no network: `python test_bom_ftp.py && python test_bom_db.py` (or `pytest`). The database
 tests also run every query in `queries.sql` against the sample.
+
+## Licence
+
+The code is under the [MIT licence](LICENSE). The licence covers the code only: the BOM data it fetches,
+including `samples/bom.json`, stays under BOM's terms (see Terms above).
