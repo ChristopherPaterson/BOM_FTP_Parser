@@ -1,0 +1,449 @@
+{
+ "fetched": 1792578005.8298056,
+ "attribution": "© Commonwealth of Australia, Bureau of Meteorology",
+ "links": {
+  "coastal": "https://www.bom.gov.au/coastal-location/australia",
+  "warnings": "https://www.bom.gov.au/weather-and-climate/warnings-and-alerts"
+ },
+ "disclaimer": "Not for navigation. Check www.bom.gov.au for the latest official forecasts and warnings.",
+ "stations": [
+  {
+   "id": "066214",
+   "name": "Sydney - Observatory Hill",
+   "state": "NSW",
+   "lat": -33.8593,
+   "lon": 151.2048,
+   "t": 1792577400.0,
+   "wind_kn": 9.0,
+   "gust_kn": null,
+   "dir": 67.0,
+   "temp_c": 19.4,
+   "pressure_hpa": 1024.7,
+   "height_m": 43.37,
+   "url": "https://www.bom.gov.au/products/IDN60901/IDN60901.94768.shtml"
+  },
+  {
+   "id": "066037",
+   "name": "Sydney Airport",
+   "state": "NSW",
+   "lat": -33.9465,
+   "lon": 151.1731,
+   "t": 1792577400.0,
+   "wind_kn": 10.0,
+   "gust_kn": 14.0,
+   "dir": 47.0,
+   "temp_c": 20.3,
+   "pressure_hpa": 1024.7,
+   "height_m": 6.0,
+   "url": "https://www.bom.gov.au/products/IDN60901/IDN60901.94767.shtml"
+  },
+  {
+   "id": "086338",
+   "name": "Melbourne (Olympic Park)",
+   "state": "VIC",
+   "lat": -37.8255,
+   "lon": 144.9816,
+   "t": 1792577400.0,
+   "wind_kn": 4.0,
+   "gust_kn": 7.0,
+   "dir": 208.0,
+   "temp_c": 17.4,
+   "pressure_hpa": 1022.5,
+   "height_m": 7.53,
+   "url": "https://www.bom.gov.au/products/IDV60901/IDV60901.95936.shtml"
+  },
+  {
+   "id": "040913",
+   "name": "Brisbane",
+   "state": "QLD",
+   "lat": -27.4808,
+   "lon": 153.0389,
+   "t": 1792577400.0,
+   "wind_kn": 2.0,
+   "gust_kn": 7.0,
+   "dir": 50.0,
+   "temp_c": 20.5,
+   "pressure_hpa": 1021.3,
+   "height_m": 8.13,
+   "url": "https://www.bom.gov.au/products/IDQ60901/IDQ60901.94576.shtml"
+  },
+  {
+   "id": "094029",
+   "name": "Hobart",
+   "state": "TAS",
+   "lat": -42.8897,
+   "lon": 147.3278,
+   "t": 1792577400.0,
+   "wind_kn": 3.0,
+   "gust_kn": 5.0,
+   "dir": 145.0,
+   "temp_c": 14.4,
+   "pressure_hpa": 1024.2,
+   "height_m": 50.5,
+   "url": "https://www.bom.gov.au/products/IDT60901/IDT60901.94970.shtml"
+  },
+  {
+   "id": "014015",
+   "name": "Darwin Airport",
+   "state": "NT",
+   "lat": -12.4239,
+   "lon": 130.8925,
+   "t": 1792577400.0,
+   "wind_kn": 5.0,
+   "gust_kn": 8.0,
+   "dir": 34.0,
+   "temp_c": 30.4,
+   "pressure_hpa": 1012.7,
+   "height_m": 30.4,
+   "url": "https://www.bom.gov.au/products/IDD60901/IDD60901.94120.shtml"
+  }
+ ],
+ "zones": {
+  "NSW_MW006": {
+   "name": "Macquarie Coast: Smoky Cape to Seal Rocks",
+   "product": "IDN11001",
+   "issued": 1792559100.0,
+   "periods": [
+    {
+     "start": 1792558800.0,
+     "end": 1792587600.0,
+     "text": {
+      "forecast_winds": "Northeasterly 15 to 20 knots.",
+      "forecast_seas": "Around 1 metre, increasing to 1 to 1.5 metres offshore.",
+      "forecast_swell1": "Northeasterly around 1 metre inshore, increasing to 1 to 1.5 metres offshore south of Crowdy Head.",
+      "forecast_weather": "Cloudy. 90% chance of showers. The chance of a thunderstorm."
+     }
+    },
+    {
+     "start": 1792587600.0,
+     "end": 1792674000.0,
+     "text": {
+      "forecast_winds": "Northeasterly 15 to 25 knots.",
+      "forecast_seas": "1 to 1.5 metres, increasing to 1.5 to 2 metres during the morning.",
+      "forecast_swell1": "Northeasterly around 1 metre.",
+      "forecast_weather": "Cloudy. 95% chance of rain. The chance of a thunderstorm in the early morning."
+     }
+    },
+    {
+     "start": 1792674000.0,
+     "end": 1792760400.0,
+     "text": {
+      "forecast_winds": "Northeasterly 15 to 25 knots increasing to 20 to 30 knots in the early afternoon then tending north to northeasterly 20 to 25 knots in the evening.",
+      "forecast_seas": "1.5 metres, increasing to 2 to 2.5 metres around midday.",
+      "forecast_swell1": "Northeasterly below 1 metre.",
+      "forecast_weather": "Cloudy. 90% chance of showers. The chance of a thunderstorm in the afternoon and evening."
+     }
+    },
+    {
+     "start": 1792760400.0,
+     "end": 1792846800.0,
+     "text": {
+      "forecast_winds": "Northerly 20 to 30 knots.",
+      "forecast_seas": "1.5 to 2.5 metres.",
+      "forecast_swell1": "Northeasterly below 1 metre.",
+      "forecast_weather": "Partly cloudy. The chance of a thunderstorm in the morning and afternoon."
+     }
+    }
+   ],
+   "parent": "NSW_FA001"
+  },
+  "NSW_MW005": {
+   "name": "Hunter Coast: Seal Rocks to Broken Bay",
+   "product": "IDN11001",
+   "issued": 1792559100.0,
+   "periods": [
+    {
+     "start": 1792558800.0,
+     "end": 1792587600.0,
+     "text": {
+      "forecast_winds": "Northeasterly 15 to 20 knots.",
+      "forecast_seas": "1 to 1.5 metres.",
+      "forecast_swell1": "Northeasterly around 1 metre.",
+      "forecast_weather": "Partly cloudy. 70% chance of showers. The chance of a thunderstorm later this evening."
+     }
+    },
+    {
+     "start": 1792587600.0,
+     "end": 1792674000.0,
+     "text": {
+      "forecast_winds": "Northeasterly 15 to 25 knots.",
+      "forecast_seas": "1 to 1.5 metres, increasing to 1.5 to 2 metres during the morning.",
+      "forecast_swell1": "Northeasterly around 1 metre.",
+      "forecast_weather": "Cloudy. 90% chance of showers. The chance of a thunderstorm."
+     }
+    },
+    {
+     "start": 1792674000.0,
+     "end": 1792760400.0,
+     "text": {
+      "forecast_winds": "Northeasterly 20 to 25 knots increasing to 20 to 30 knots in the late afternoon then decreasing to 20 to 25 knots in the evening.",
+      "forecast_seas": "1.5 to 2.5 metres.",
+      "forecast_swell1": "Northeasterly below 1 metre.",
+      "forecast_weather": "Partly cloudy. 70% chance of showers. The chance of a thunderstorm in the afternoon and evening."
+     }
+    },
+    {
+     "start": 1792760400.0,
+     "end": 1792846800.0,
+     "text": {
+      "forecast_winds": "Northerly 20 to 30 knots.",
+      "forecast_seas": "1.5 to 2.5 metres.",
+      "forecast_swell1": "Northeasterly below 1 metre, increasing to 1 to 1.5 metres south of Port Stephens during the morning.",
+      "forecast_weather": "Mostly sunny. The chance of a thunderstorm in the morning and afternoon."
+     }
+    }
+   ],
+   "parent": "NSW_FA001"
+  },
+  "QLD_MW014": {
+   "name": "Gold Coast Waters: Cape Moreton to Point Danger",
+   "product": "IDQ11290",
+   "issued": 1792558800.0,
+   "periods": [
+    {
+     "start": 1792558800.0,
+     "end": 1792591200.0,
+     "text": {
+      "forecast_winds": "Northeasterly 10 to 15 knots, reaching up to 20 knots offshore in the evening.",
+      "forecast_seas": "Around 1 metre, increasing to 1 to 1.5 metres offshore north of Point Lookout.",
+      "forecast_swell1": "Easterly 1.5 metres, tending northeasterly 1 to 1.5 metres later in the evening.",
+      "forecast_weather": "Cloudy. 80% chance of showers. The chance of a thunderstorm."
+     }
+    },
+    {
+     "start": 1792591200.0,
+     "end": 1792677600.0,
+     "text": {
+      "forecast_winds": "Northeasterly 15 to 20 knots.",
+      "forecast_seas": "1 to 1.5 metres.",
+      "forecast_swell1": "Northeasterly around 1 metre.",
+      "forecast_weather": "Cloudy. 80% chance of showers. The chance of a thunderstorm."
+     }
+    },
+    {
+     "start": 1792677600.0,
+     "end": 1792764000.0,
+     "text": {
+      "forecast_winds": "Northeasterly 15 to 20 knots.",
+      "forecast_seas": "1 to 1.5 metres.",
+      "forecast_swell1": "Northeasterly around 1 metre.",
+      "forecast_weather": "Partly cloudy. 80% chance of showers. The chance of a thunderstorm."
+     }
+    },
+    {
+     "start": 1792764000.0,
+     "end": 1792850400.0,
+     "text": {
+      "forecast_winds": "North to northeasterly 15 to 20 knots.",
+      "forecast_seas": "1 to 1.5 metres.",
+      "forecast_swell1": "Northeasterly around 1 metre inshore, increasing to 1 to 1.5 metres offshore.",
+      "forecast_weather": "Partly cloudy. 80% chance of showers. The chance of a thunderstorm."
+     }
+    }
+   ],
+   "parent": "QLD_FA001"
+  },
+  "TAS_MW003": {
+   "name": "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+   "product": "IDT12329",
+   "issued": 1792559100.0,
+   "periods": [
+    {
+     "start": 1792558800.0,
+     "end": 1792587600.0,
+     "text": {
+      "forecast_winds": "Northerly 10 to 15 knots, reaching up to 20 knots near Eddystone Point in the late afternoon.",
+      "forecast_seas": "Around 1 metre.",
+      "forecast_swell1": "Northeasterly around 1 metre.",
+      "forecast_weather": "Clear."
+     }
+    },
+    {
+     "start": 1792587600.0,
+     "end": 1792674000.0,
+     "text": {
+      "forecast_winds": "North to northeasterly 15 to 20 knots, reaching up to 30 knots offshore in the late evening.",
+      "forecast_seas": "Around 1 metre, increasing to 1 to 1.5 metres around midday.",
+      "forecast_swell1": "Northeasterly around 1 metre.",
+      "forecast_weather": "Cloud clearing."
+     }
+    },
+    {
+     "start": 1792674000.0,
+     "end": 1792760400.0,
+     "text": {
+      "forecast_winds": "Northerly 20 to 30 knots decreasing to 15 to 25 knots in the early morning.",
+      "forecast_seas": "1.5 to 2.5 metres, decreasing to 1 to 1.5 metres around midday.",
+      "forecast_swell1": "Northeasterly 1 to 1.5 metres, increasing to 1.5 to 2 metres during the morning, then decreasing to 1.5 metres by early evening.",
+      "forecast_weather": "Sunny."
+     }
+    },
+    {
+     "start": 1792760400.0,
+     "end": 1792846800.0,
+     "text": {
+      "forecast_winds": "Northerly 15 to 20 knots turning northwesterly 10 to 15 knots during the day.",
+      "forecast_seas": "1 to 1.5 metres, decreasing to 1 metre during the morning.",
+      "forecast_swell1": "Northeasterly 1.5 to 2 metres, decreasing to 1.5 metres during the afternoon or evening.",
+      "forecast_weather": "Becoming cloudy. 60% chance of showers."
+     }
+    }
+   ],
+   "parent": "TAS_FA001"
+  },
+  "TAS_MW004": {
+   "name": "Upper East Coast: St Helens Point to Wineglass Bay",
+   "product": "IDT12329",
+   "issued": 1792559100.0,
+   "periods": [
+    {
+     "start": 1792558800.0,
+     "end": 1792587600.0,
+     "text": {
+      "forecast_winds": "North to northwesterly 15 to 20 knots tending southeast to southwesterly 10 to 15 knots in the late evening.",
+      "forecast_seas": "1 to 1.5 metres.",
+      "forecast_swell1": "North to northeasterly around 1 metre inshore, increasing to 1 to 1.5 metres offshore.",
+      "forecast_weather": "Partly cloudy."
+     }
+    },
+    {
+     "start": 1792587600.0,
+     "end": 1792674000.0,
+     "text": {
+      "forecast_winds": "Variable about 10 knots becoming northerly 15 to 25 knots in the morning. Winds reaching up to 30 knots in the afternoon.",
+      "forecast_seas": "Around 1 metre, increasing to 1.5 to 2.5 metres around midday.",
+      "forecast_swell1": "Southerly below 1 metre inshore, increasing to 1 to 1.5 metres offshore during the morning.",
+      "forecast_swell2": "Northeasterly around 1 metre.",
+      "forecast_weather": "Partly cloudy."
+     }
+    },
+    {
+     "start": 1792674000.0,
+     "end": 1792760400.0,
+     "text": {
+      "forecast_winds": "Northerly 15 to 25 knots increasing to 20 to 30 knots in the middle of the day then decreasing to 15 to 25 knots in the late evening.",
+      "forecast_seas": "1.5 to 2.5 metres.",
+      "forecast_swell1": "North to northeasterly around 1 metre, increasing to 1 to 2 metres during the morning, then decreasing to 1 to 1.5 metres during the afternoon.",
+      "forecast_swell2": "Southerly around 1 metre.",
+      "forecast_weather": "Mostly sunny."
+     }
+    },
+    {
+     "start": 1792760400.0,
+     "end": 1792846800.0,
+     "text": {
+      "forecast_winds": "Northerly 15 to 20 knots turning northwesterly 10 to 15 knots during the evening.",
+      "forecast_seas": "1 to 2 metres, decreasing to 1 to 1.5 metres during the morning.",
+      "forecast_swell1": "Northerly 1 to 1.5 metres, tending northeasterly 1 to 2 metres during the morning.",
+      "forecast_swell2": "Southerly below 1 metre inshore, increasing to 1 to 1.5 metres offshore.",
+      "forecast_weather": "Partly cloudy. 90% chance of showers."
+     }
+    }
+   ],
+   "parent": "TAS_FA001"
+  },
+  "VIC_MW005": {
+   "name": "Port Phillip",
+   "product": "IDV10465",
+   "issued": 1792559700.0,
+   "periods": [
+    {
+     "start": 1792558800.0,
+     "end": 1792587600.0,
+     "text": {
+      "forecast_winds": "Southerly 10 to 15 knots decreasing to about 10 knots in the evening.",
+      "forecast_seas": "Below 1 metre.",
+      "forecast_weather": "Partly cloudy. The chance of a thunderstorm early this evening."
+     }
+    },
+    {
+     "start": 1792587600.0,
+     "end": 1792674000.0,
+     "text": {
+      "forecast_winds": "North to northeasterly about 10 knots.",
+      "forecast_seas": "Below 1 metre.",
+      "forecast_weather": "The chance of fog in the early morning with reduced visibility. Mostly sunny day."
+     }
+    },
+    {
+     "start": 1792674000.0,
+     "end": 1792760400.0,
+     "text": {
+      "forecast_winds": "Northerly 15 to 20 knots shifting southerly below 10 knots in the late evening.",
+      "forecast_seas": "Around 1 metre.",
+      "forecast_weather": "Sunny."
+     }
+    },
+    {
+     "start": 1792760400.0,
+     "end": 1792846800.0,
+     "text": {
+      "forecast_winds": "Variable below 10 knots becoming northeast to southeasterly 10 to 15 knots during the morning then tending southerly during the afternoon.",
+      "forecast_seas": "Below 1 metre.",
+      "forecast_weather": "Partly cloudy. 90% chance of showers. The chance of a thunderstorm in the morning and afternoon."
+     }
+    },
+    {
+     "start": 1792846800.0,
+     "end": 1792933200.0,
+     "text": {
+      "forecast_winds": "Southerly 10 to 15 knots tending southwesterly 15 to 20 knots during the day.",
+      "forecast_seas": "Around 1 metre.",
+      "forecast_weather": "Cloudy. Near 100% chance of showers."
+     }
+    }
+   ],
+   "parent": "VIC_FA001"
+  }
+ },
+ "synopsis": {
+  "NSW_FA001": "A strong high pressure system over the Tasman Sea is maintaining northeasterly winds across the coastal waters. Very little change in weather pattern is forecast through the week due to the slow movement of the high. A cold front is then forecast to cross the state during the weekend into early next week, bringing a southerly change in its wake.",
+  "VIC_FA001": "A high pressure system centred over the Tasman Sea will drift slowly eastwards as a cold front approaches from the west on Friday. This cold front will cross the State on Saturday and Sunday with a secondary trough crossing late Sunday or Monday.",
+  "TAS_FA001": "A slow moving high over the Tasman Sea directs a warm northwesterly flow over Tasmania this week. A weak trough lingers over the state today and tomorrow. A stronger trough is expected to move over Tasmania on Friday, with a cold front following Saturday evening. Another trough is forecast to develop off the east coast on Sunday."
+ },
+ "warnings": [
+  {
+   "id": "AusBoM-IDT20100-2026-10-21T05:05:05+00:00",
+   "headline": "Strong Wind Warning for coastal waters between Northern Tip of Flinders Island and South East Cape for 22 October",
+   "event": "Wind",
+   "level": "strong",
+   "severity": "Moderate",
+   "effective": 1792587600.0,
+   "expires": 1792674000.0,
+   "zones": [
+    "TAS_MW003",
+    "TAS_MW004",
+    "TAS_MW005",
+    "TAS_MW006"
+   ],
+   "url": "https://www.bom.gov.au/weather-and-climate/warnings-and-alerts"
+  },
+  {
+   "id": "AusBoM-IDV20600-2026-10-21T05:15:03+00:00",
+   "headline": "Strong Wind Warning for coastal waters between Lakes Entrance and 60nm east of Gabo Island for 22 October",
+   "event": "Wind",
+   "level": "strong",
+   "severity": "Moderate",
+   "effective": 1792587600.0,
+   "expires": 1792674000.0,
+   "zones": [
+    "VIC_MW004"
+   ],
+   "url": "https://www.bom.gov.au/weather-and-climate/warnings-and-alerts"
+  },
+  {
+   "id": "AusBoM-IDW20100-2026-10-21T05:01:04+00:00",
+   "headline": "Strong Wind Warning for coastal waters between Cape Naturaliste and Bremer Bay for 21 October",
+   "event": "Wind",
+   "level": "strong",
+   "severity": "Moderate",
+   "effective": 1792558800.0,
+   "expires": 1792598400.0,
+   "zones": [
+    "WA_MW011",
+    "WA_MW012"
+   ],
+   "url": "https://www.bom.gov.au/weather-and-climate/warnings-and-alerts"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOM wind map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+  html, body, #map { height: 100%; margin: 0; font: 14px system-ui, sans-serif; }
+  #panel { position: absolute; top: 10px; right: 10px; z-index: 1000; max-width: 320px; max-height: 70vh;
+           overflow: auto; background: #fff; padding: 8px 12px; border-radius: 6px; box-shadow: 0 1px 4px #0004; }
+  #panel h3 { margin: 4px 0; font-size: 14px; }
+  .w { margin: 6px 0; } .gale, .storm, .hurricane { color: #b00; font-weight: 600; }
+  #foot { position: absolute; bottom: 0; left: 0; z-index: 1000; background: #fffc; padding: 2px 6px; font-size: 11px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="panel"><h3>Marine warnings</h3><div id="warnings">Loading...</div></div>
+<div id="foot"></div>
+<script>
+// Stations from /api/stations as circles coloured by wind speed; warnings from /api/warnings in the panel.
+const map = L.map("map").setView([-30, 135], 4);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 18, attribution: "&copy; OpenStreetMap contributors",
+}).addTo(map);
+
+const colour = kn => kn == null ? "#999" : kn < 10 ? "#2a9d8f" : kn < 20 ? "#e9c46a" : kn < 30 ? "#f4a261" : "#e63946";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const time = t => new Date(t * 1000).toLocaleString([], {weekday: "short", hour: "2-digit", minute: "2-digit"});
+
+async function load() {
+  const [st, wa] = await Promise.all([fetch("/api/stations").then(r => r.json()),
+                                      fetch("/api/warnings").then(r => r.json())]);
+  for (const s of st.data) {
+    L.circleMarker([s.lat, s.lon], {radius: 6, color: "#333", weight: 1, fillColor: colour(s.wind_kn), fillOpacity: .9})
+      .bindPopup(`<b>${esc(s.name)}</b><br>Wind ${esc(s.wind_kn ?? "-")} kn from ${esc(s.dir ?? "-")}&deg;` +
+                 (s.gust_kn ? `, gust ${esc(s.gust_kn)} kn` : "") + `<br>${time(s.t)}` +
+                 (s.url ? `<br><a href="${esc(s.url)}" target="_blank" rel="noopener">BOM page</a>` : ""))
+      .addTo(map);
+  }
+  document.getElementById("warnings").innerHTML = wa.data.length
+    ? wa.data.map(w => `<div class="w ${esc(w.level)}">${esc(w.headline)}<br><small>${esc(w.zones.join(", "))}` +
+                       ` - until ${time(w.expires)}</small></div>`).join("")
+    : "None in force.";
+  document.getElementById("foot").textContent = `${st.attribution}. ${st.disclaimer}`;
+}
+load().catch(e => document.getElementById("warnings").textContent = "Could not load: " + e);
+</script>
+</body>
+</html>
